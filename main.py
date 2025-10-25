@@ -8,7 +8,7 @@ st.title("Traffic Analysis")
 
 uploaded_file = st.file_uploader("Upload your csv file", type=["csv"])
 if not uploaded_file:
-    st.info("Please upload the Sample‑Superstore CSV to view charts.")
+    st.info("Please upload the Dataset  to view charts.")
     st.stop()
 
 def streamlit_config():
@@ -22,7 +22,7 @@ def streamlit_config():
 
     [data-testid="stHeader"] 
     {
-    background: rgba(0,0,0,0);
+    background: rgba(215, 144, 183, 0.8);
     }
 
     </style>
