@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+import report
 
 st.title("Traffic Analysis")
 
@@ -104,7 +105,7 @@ app_summary = df.groupby('unnamed:_0').agg({
     'idfa_ip_ratio':'mean',
     'idfa_ua_ratio':'mean'
 })
-print(f"app_summary:{app_summary}")
+# print(f"app_summary:{app_summary}")
 # 1. Correlational Matrix
 cols = ['unique_idfas', 'unique_ips', 'unique_uas', 'total_requests','requests_per_idfa','impressions_per_idfa','impression_rate','idfa_ip_ratio','idfa_ua_ratio']
 corr = df[cols].corr()
