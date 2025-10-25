@@ -170,3 +170,6 @@ plt.title("IDFA-ip Ratio across App Categories")
 plt.legend()
 plt.grid(True)
 st.pyplot(fig5)
+
+# report 
+report.show_report()
